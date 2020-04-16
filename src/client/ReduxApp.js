@@ -8,11 +8,11 @@ const store = createStore(reducer);
 const Greeting = () => {
   const greeting = useSelector((state) => state.greeting);
 
-  return <div>Greeting: {greeting}</div>;
+  return React.createElement('div', { children: greeting });
 };
 
-export const ReduxContainer = () => (
-  <Provider store={store}>
-    ReduxContainer <Greeting />
-  </Provider>
-);
+export const ReduxApp = () =>
+  React.createElement(Provider, {
+    store,
+    children: ['ReduxApp', React.createElement(Greeting)],
+  });
