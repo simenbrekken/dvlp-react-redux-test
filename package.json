@@ -7,8 +7,8 @@
     "singleQuote": true
   },
   "scripts": {
-    "bundle": "rollup",
-    "dev": "dvlp --transpiler scripts/transpile.js src/ static/"
+    "bundle": "rollup --config rollup.config.js",
+    "dev": "dvlp src/ static/ build/"
   },
   "dependencies": {
     "dvlp": "^8.0.1",
