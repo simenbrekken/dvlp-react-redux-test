@@ -7,5 +7,12 @@ export default {
     file: 'build/client.js',
     format: 'cjs',
   },
-  plugins: [resolve(), commonjs()],
+  plugins: [
+    resolve(),
+    commonjs({
+      namedExports: {
+        react: ['useState'],
+      },
+    }),
+  ],
 };
