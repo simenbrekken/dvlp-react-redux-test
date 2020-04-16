@@ -6,6 +6,9 @@
   "prettier": {
     "singleQuote": true
   },
+  "scripts": {
+    "dev": "dvlp --transpiler scripts/transpile.js src/ static/"
+  },
   "dependencies": {
     "@babel/core": "^7.9.0",
     "@babel/preset-react": "^7.9.4",
