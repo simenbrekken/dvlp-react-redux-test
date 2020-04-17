@@ -1,18 +1,12 @@
-import resolve from '@rollup/plugin-node-resolve';
-import commonjs from '@rollup/plugin-commonjs';
+import { getDefaultRollupConfig } from 'dvlp';
+
+const defaultRollupConfig = getDefaultRollupConfig();
 
 export default {
+  ...defaultRollupConfig,
   input: 'src/client/index.js',
   output: {
     file: 'build/client.js',
     format: 'cjs',
   },
-  plugins: [
-    resolve(),
-    commonjs({
-      namedExports: {
-        react: ['useState'],
-      },
-    }),
-  ],
 };

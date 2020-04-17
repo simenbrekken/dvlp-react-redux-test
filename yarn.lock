@@ -209,10 +209,10 @@ destroy@~1.0.4:
   resolved "https://registry.yarnpkg.com/destroy/-/destroy-1.0.4.tgz#978857442c44749e4206613e37946205826abd80"
   integrity sha1-l4hXRCxEdJ5CBmE+N5RiBYJqvYA=
 
-dvlp@^8.1.0:
-  version "8.1.0"
-  resolved "https://registry.yarnpkg.com/dvlp/-/dvlp-8.1.0.tgz#75df00e2fdb03ec81f15373c206f4fb6af13ff82"
-  integrity sha512-F8HiYoFP0DsPI5skVLOB3ZZLrZ8HGTjcUecbBjtBVXvYSjDZZvDwjjw4pmzwxmAI5+6nJIbpR52Ku+lUekoT7A==
+dvlp@^8.1.1:
+  version "8.1.1"
+  resolved "https://registry.yarnpkg.com/dvlp/-/dvlp-8.1.1.tgz#afaccd2f0e3716b7ea42bd032f8f3e3820330fcd"
+  integrity sha512-qmiz7Aq0He1cmnGeoCizr3cct4oBDSBg/xaRTdgnZ9U4ENXL47zk8MpuND56QcgHFg+hp3FdnJINorkN31izNg==
   dependencies:
     "@rollup/plugin-commonjs" "^11.0.1"
     "@rollup/plugin-json" "^4.0.1"
